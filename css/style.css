@@ -9,11 +9,38 @@
     display: none;
   }
 
+
+  .btn-get-started {
+    font-family: "Changa", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fbab1f;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+   
+  }
+
+  .btn-get-started:hover {
+    background: #fbab1f;
+    color: #094159;
+    text-decoration: none;
+  }
+
 :root {
     --primary: #fad38f;
     --secondary:  #2aace2;
     --light: #F0F6FF;
     --dark: #094159;
+}
+h1,h2,h3,h4,h5,h6{
+  color:#fdb842;
 }
 
 /*** Spinner ***/
