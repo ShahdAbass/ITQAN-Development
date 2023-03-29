@@ -8,6 +8,95 @@
   #more,#more1,#more2,#more3,#more4,#more5,#more6,#more7{
     display: none;
   }
+ 
+  /*.dropdown ul {
+    display: block;
+    position: absolute;
+    left: 28px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+  }
+
+   .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--light);
+    font-weight: 400;
+  }
+
+  .dropdown ul a i {
+    font-size: 12px;
+  }
+  .dropdown ul a:hover,
+   .dropdown ul .active:hover,
+   .dropdown ul li:hover>a {
+    color: var(--light);
+  }
+
+  .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+
+  .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+   .dropdown .dropdown ul {
+    left: -90%;
+  }
+
+  .dropdown .dropdown:hover>ul {
+    left: -100%;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .mobile-nav-show,
+  .mobile-nav-hide {
+    display: none;
+  }
+}
+
+.dropdown ul,
+ .dropdown .dropdown ul {
+    position: static;
+    display: none;
+    padding: 10px 0;
+    margin: 10px 20px;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #222428;
+  }
+
+  .dropdown>.dropdown-active,
+   .dropdown .dropdown>.dropdown-active {
+    display: block;
+  }*/
 
 :root {
     --primary: #fad38f;
@@ -251,7 +340,7 @@ h6,
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
     background: url(../img/bg-circle.png), url(../img/bg-triangle.png), url(../img/bg-bottom.png), linear-gradient(to bottom right, var(--primary), var(--secondary));
-    background-position: left 0px top 0px, right 0px top 50%, center bottom;
+    background-position: right 0px top 0px, left 0px top 50%, center bottom;
     background-repeat: no-repeat;
 }
 
@@ -439,7 +528,7 @@ h6,
     text-decoration: none;
     margin-bottom: 10px;
     padding: 0;
-    text-align: left;
+    text-align: right;
     color: var(--light);
     font-weight: normal;
     transition: .3s;
@@ -454,13 +543,12 @@ h6,
     font-weight: normal;
     transition: .3s;
 }
-
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .footer .btn.btn-link:hover {
@@ -543,4 +631,6 @@ a{
     align-items: center;
     justify-content: center;
   }
+  
+
   

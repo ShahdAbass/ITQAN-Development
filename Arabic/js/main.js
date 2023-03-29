@@ -105,8 +105,6 @@
 
 
 
-
-
  /**
    * Lanugaue
    */
@@ -150,11 +148,11 @@ function myFuncation() {
   
     if (dots.style.display === "none"){
       dots.style.display  = "inline";
-      btnText.innerHTML = "Read More";
+      btnText.innerHTML = "إضغط للمزيد";
       moreText.style.display = "none"
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read Less";
+      btnText.innerHTML = "إضغط للمزيد";
       moreText.style.display = "inline";
   
     }
@@ -168,11 +166,11 @@ function myFuncation() {
   
     if (dots.style.display === "none"){
       dots.style.display  = "inline";
-      btnText.innerHTML = "Read More";
+      btnText.innerHTML = "إضغط للمزيد";
       moreText.style.display = "none"
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read Less";
+      btnText.innerHTML = "إضغط للمزيد";
       moreText.style.display = "inline";
   
     }
